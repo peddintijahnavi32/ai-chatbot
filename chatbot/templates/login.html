@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome</title>
+
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+        }
+
+        .container {
+            text-align: center;
+            animation: fadeIn 2s ease-in;
+        }
+
+        h1 {
+            font-size: 40px;
+        }
+
+        button {
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 25px;
+            background: #ff7eb3;
+            color: white;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+            background: #ff4d94;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>👋 Hi User</h1>
+    <p>Welcome to your AI Chatbot</p>
+
+    <!-- GO TO CHAT PAGE -->
+    <form action="/chatpage" method="get">
+        <button type="submit">Start Chat</button>
+    </form>
+</div>
+
+</body>
+</html>
